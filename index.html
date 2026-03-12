@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xolution | Evidence-based Exercise Medicine</title>
+  <meta name="description" content="Xolution provides AI-powered, evidence-based lifestyle solutions backed by 30+ years of clinical data. Cancer rehabilitation, digital therapeutics, personalized healthcare.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 4L4 12v16l16 8 16-8V12L20 4z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 4v32M4 12l16 8 16-8M4 28l16-8 16 8" stroke="currentColor" stroke-width="1.5" opacity="0.6"/></svg>
+        <span class="logo-text">xolution</span>
+      </a>
+      <div class="nav-right">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" title="Switch language">
+          <span class="lang-option active" data-lang="ko">KO</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" data-ko="회사 소개" data-en="About">회사 소개</a></li>
+        <li><a href="#technology" data-ko="핵심 기술" data-en="Technology">핵심 기술</a></li>
+        <li><a href="#pipeline" data-ko="파이프라인" data-en="Pipeline">파이프라인</a></li>
+        <li><a href="#cases" data-ko="협업 사례" data-en="Case Studies">협업 사례</a></li>
+        <li><a href="#team" data-ko="팀" data-en="Team">팀</a></li>
+        <li><a href="#partners" data-ko="파트너" data-en="Partners">파트너</a></li>
+        <li><a href="#contact" class="nav-cta" data-ko="문의하기" data-en="Contact">문의하기</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">Evidence-based Exercise Medicine</div>
+      <h1 class="hero-title">
+        <span data-ko="건강하고 행복한 삶을 위한" data-en="Building a Nurturing Society for">건강하고 행복한 삶을 위한</span><br>
+        <span class="text-gradient" data-ko="살루토제닉 라이프스타일" data-en="Healthier & Happier Lives">살루토제닉 라이프스타일</span>
+      </h1>
+      <p class="hero-subtitle" data-ko="30년 이상의 임상 데이터와 AI 기술을 결합하여&lt;br&gt;과학적 근거 기반 맞춤형 라이프스타일 솔루션을 제공합니다" data-en="Combining 30+ years of clinical data with AI technology&lt;br&gt;to deliver personalized, evidence-based lifestyle solutions">
+        30년 이상의 임상 데이터와 AI 기술을 결합하여<br>
+        과학적 근거 기반 맞춤형 라이프스타일 솔루션을 제공합니다
+      </p>
+      <div class="hero-actions">
+        <a href="#technology" class="btn btn-primary" data-ko="기술 알아보기" data-en="Explore Technology">기술 알아보기</a>
+        <a href="#contact" class="btn btn-outline" data-ko="상담 문의" data-en="Get in Touch">상담 문의</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="190">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-ko="SCI(E)급 논문" data-en="SCI(E) Publications">SCI(E)급 논문</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12280">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-ko="피인용 횟수" data-en="Total Citations">피인용 횟수</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="300">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-ko="학술지 발표" data-en="Publications">학술지 발표</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-ko="프로젝트 수행" data-en="Projects Completed">프로젝트 수행</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="scroll-indicator"></div></div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title" data-ko="Lifestyle Solution,&lt;br&gt;&lt;span class='text-gradient'&gt;과학이 만드는 건강&lt;/span&gt;" data-en="Lifestyle Solution,&lt;br&gt;&lt;span class='text-gradient'&gt;Where Science Meets Health&lt;/span&gt;">Lifestyle Solution,<br><span class="text-gradient">과학이 만드는 건강</span></h2>
+        <p class="section-desc" data-ko="Xolution은 근거기반 운동의학 분야를 개척하는 헬스케어 기업입니다.&lt;br&gt;임상시험 데이터와 AI 기술로 개인별 맞춤형 라이프스타일 솔루션을 제공합니다." data-en="Xolution is a healthcare company pioneering evidence-based exercise medicine.&lt;br&gt;We deliver personalized lifestyle solutions powered by clinical trial data and AI.">
+          Xolution은 근거기반 운동의학 분야를 개척하는 헬스케어 기업입니다.<br>
+          임상시험 데이터와 AI 기술로 개인별 맞춤형 라이프스타일 솔루션을 제공합니다.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card" data-aos="fade-up">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 14V10a8 8 0 0116 0v4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="26" r="4" stroke="currentColor" stroke-width="2"/><path d="M24 30v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-ko="디지털 치료제 개발" data-en="Digital Therapeutics Development">디지털 치료제 개발</h3>
+          <p data-ko="MFDS 혁신의료기기 패스트트랙 기반의 디지털 치료제를 개발합니다. ExerCompass DTx를 시작으로 암재활, 대사질환 등 다양한 파이프라인을 확장하고 있습니다." data-en="Developing digital therapeutics through MFDS innovative medical device fast-track. Starting with ExerCompass DTx, we are expanding pipelines across cancer rehabilitation, metabolic diseases, and more.">디지털 치료제 개발 — MFDS 혁신의료기기 패스트트랙 기반의 디지털 치료제를 개발합니다. ExerCompass DTx를 시작으로 암재활, 대사질환 등 다양한 파이프라인을 확장하고 있습니다.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4z" stroke="currentColor" stroke-width="2"/><path d="M14 24l4 4 4-4M26 20l4 4 4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 28v6M30 24v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-ko="임상연구 수행" data-en="Clinical Research">임상연구 수행</h3>
+          <p data-ko="30년 이상의 임상시험 데이터와 190편 이상의 SCI(E)급 논문을 기반으로 근거기반 임상연구를 수행합니다. 하버드, 캠브리지, 세브란스 병원 등과 글로벌 공동 연구를 진행하고 있습니다." data-en="Conducting evidence-based clinical research backed by 30+ years of clinical trial data and 190+ SCI(E) publications. We collaborate globally with Harvard, Cambridge, Severance Hospital and more.">임상연구 수행 — 30년 이상의 임상시험 데이터와 190편 이상의 SCI(E)급 논문을 기반으로 근거기반 임상연구를 수행합니다. 하버드, 캠브리지, 세브란스 병원 등과 글로벌 공동 연구를 진행하고 있습니다.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 38l8-14 6 8 8-18 10 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="10" r="6" stroke="currentColor" stroke-width="2"/><path d="M24 16v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-ko="근거기반 라이프스타일 솔루션" data-en="Evidence-based Lifestyle Solutions">근거기반 라이프스타일 솔루션</h3>
+          <p data-ko="AI 기반 개인별 맞춤형 운동, 영양, 수면, 심리, 명상, 라이프스타일 중재 프로그램을 자동 생성하여 제공합니다. 10단계 근거기반 프로그램으로 안전하고 효과적인 솔루션을 전달합니다." data-en="AI-powered personalized programs spanning exercise, nutrition, sleep, psychology, meditation, and lifestyle interventions. Our 10-step evidence-based program delivers safe and effective solutions.">근거기반 라이프스타일 솔루션 — AI 기반 개인별 맞춤형 운동, 영양, 수면, 심리, 명상, 라이프스타일 중재 프로그램을 자동 생성하여 제공합니다. 10단계 근거기반 프로그램으로 안전하고 효과적인 솔루션을 전달합니다.</p>
+        </div>
+      </div>
+
+      <div class="about-mission">
+        <div class="mission-content">
+          <h3 data-ko="우리의 미션" data-en="Our Mission">우리의 미션</h3>
+          <p class="mission-text" data-ko="&quot;살루토제닉 라이프스타일을 통해 사람들이 더 건강하고 행복한 삶을 살 수 있는&lt;br&gt;따뜻한 사회를 만들어 갑니다&quot;" data-en="&quot;To build a nurturing society that enables people to live healthier and happier lives&lt;br&gt;through salutogenic lifestyles&quot;">
+            "살루토제닉 라이프스타일을 통해 사람들이 더 건강하고 행복한 삶을 살 수 있는<br>
+            따뜻한 사회를 만들어 갑니다"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="section technology" id="technology">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Technology</span>
+        <h2 class="section-title" data-ko="Lifestyle Solution&lt;br&gt;&lt;span class='text-gradient'&gt;10단계 근거기반 운동 프로그램&lt;/span&gt;" data-en="Lifestyle Solution&lt;br&gt;&lt;span class='text-gradient'&gt;10-Step Evidence-based Program&lt;/span&gt;">Lifestyle Solution<br><span class="text-gradient">10단계 근거기반 운동 프로그램</span></h2>
+        <p class="section-desc" data-ko="지난 30여 년간의 임상경험을 바탕으로 개발된&lt;br&gt;과학적 근거 기반 운동프로그램 플랫폼" data-en="A scientifically validated exercise program platform&lt;br&gt;developed from 30+ years of clinical experience">
+          지난 30여 년간의 임상경험을 바탕으로 개발된<br>
+          과학적 근거 기반 운동프로그램 플랫폼
+        </p>
+      </div>
+
+      <div class="tech-flow">
+        <div class="tech-flow-item" data-aos="fade-right">
+          <div class="tech-flow-number">01</div>
+          <div class="tech-flow-content">
+            <h4 data-ko="데이터 수집" data-en="Data Collection">데이터 수집</h4>
+            <p data-ko="환자의 신체 정보, 기능 상태, 증상, 운동 목표, 수행능력 등 종합적 데이터 수집" data-en="Comprehensive collection of patient physical data, functional status, symptoms, goals, and exercise capacity">환자의 신체 정보, 기능 상태, 증상, 운동 목표, 수행능력 등 종합적 데이터 수집</p>
+          </div>
+        </div>
+        <div class="tech-flow-connector"></div>
+        <div class="tech-flow-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="tech-flow-number">02</div>
+          <div class="tech-flow-content">
+            <h4 data-ko="AI 분석" data-en="AI Analysis">AI 분석</h4>
+            <p data-ko="머신러닝 기반 개인 상태 분석 및 최적 운동 프로그램 자동 설계" data-en="Machine learning-based individual assessment and automatic optimal program design">머신러닝 기반 개인 상태 분석 및 최적 운동 프로그램 자동 설계</p>
+          </div>
+        </div>
+        <div class="tech-flow-connector"></div>
+        <div class="tech-flow-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="tech-flow-number">03</div>
+          <div class="tech-flow-content">
+            <h4 data-ko="맞춤 중재" data-en="Personalized Intervention">맞춤 중재</h4>
+            <p data-ko="10단계 근거기반 운동 프로그램 + 영양, 수면, 심리, 명상, 라이프스타일 중재" data-en="10-step evidence-based exercise + nutrition, sleep, psychology, meditation, and lifestyle interventions">10단계 근거기반 운동 프로그램 + 영양, 수면, 심리, 명상, 라이프스타일 중재</p>
+          </div>
+        </div>
+        <div class="tech-flow-connector"></div>
+        <div class="tech-flow-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="tech-flow-number">04</div>
+          <div class="tech-flow-content">
+            <h4 data-ko="피드백 & 조정" data-en="Feedback & Adaptation">피드백 & 조정</h4>
+            <p data-ko="운동 달성도 및 피드백, 통증 부위를 고려한 주기별 자동 프로그램 조정" data-en="Automatic periodic program adjustments based on exercise adherence, feedback, and pain assessment">운동 달성도 및 피드백, 통증 부위를 고려한 주기별 자동 프로그램 조정</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card feature-highlight" data-aos="fade-up">
+          <div class="feature-icon-large">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 8v48M16 32h32M20 16l24 32M44 16L20 48" stroke="currentColor" stroke-width="2" opacity="0.3"/><circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2.5"/><circle cx="32" cy="32" r="4" fill="currentColor"/></svg>
+          </div>
+          <h4 data-ko="원천 특허 기술" data-en="Patented Core Technology">원천 특허 기술</h4>
+          <p data-ko="임상시험 결과 기반 10단계 근거기반 운동 프로그램 및 주기별 운동 프로그램 자동 생성 엔진" data-en="Clinical trial-validated 10-step exercise program framework with automatic periodic program generation engine">임상시험 결과 기반 10단계 근거기반 운동 프로그램 및 주기별 운동 프로그램 자동 생성 엔진</p>
+          <span class="feature-badge" data-ko="특허 보유" data-en="Patented">특허 보유</span>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <h4 data-ko="동작 패턴 분석" data-en="Motion Analysis">동작 패턴 분석</h4>
+          <p data-ko="동작인식 기반 콘텐츠 플랫폼으로 정확한 운동 자세 분석 및 실시간 피드백 제공" data-en="Motion recognition-based content platform providing real-time posture analysis and feedback">동작인식 기반 콘텐츠 플랫폼으로 정확한 운동 자세 분석 및 실시간 피드백 제공</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <h4 data-ko="증상별 생활습관 관리" data-en="Symptom-based Lifestyle Management">증상별 생활습관 관리</h4>
+          <p data-ko="환자 증상별 생활습관 기록 및 추정 기능으로 종합적인 건강 관리 지원" data-en="Comprehensive health management through symptom-specific lifestyle tracking and assessment">환자 증상별 생활습관 기록 및 추정 기능으로 종합적인 건강 관리 지원</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <h4 data-ko="EMR 연동" data-en="EMR Integration">EMR 연동</h4>
+          <p data-ko="FHIR 표준 기반 EMR 연동으로 의료진과 환자 간 원활한 데이터 공유" data-en="FHIR-standard EMR integration enabling seamless data sharing between clinicians and patients">FHIR 표준 기반 EMR 연동으로 의료진과 환자 간 원활한 데이터 공유</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinical Results Section -->
+  <section class="section results">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Evidence</span>
+        <h2 class="section-title" data-ko="임상으로 &lt;span class='text-gradient'&gt;검증된 효과&lt;/span&gt;" data-en="Clinically &lt;span class='text-gradient'&gt;Proven Results&lt;/span&gt;">임상으로 <span class="text-gradient">검증된 효과</span></h2>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-card" data-aos="fade-up">
+          <div class="result-header">
+            <span class="result-tag" data-ko="유방암" data-en="Breast Cancer">유방암</span>
+            <span class="result-journal">JAMA Surgery</span>
+          </div>
+          <h4 data-ko="상지기능 개선 프로그램" data-en="Upper Limb Recovery Program">상지기능 개선 프로그램</h4>
+          <div class="result-stat">
+            <span class="result-number">96.2%</span>
+            <span class="result-desc" data-ko="운동군 정상 회복률" data-en="Exercise group full recovery rate">운동군 정상 회복률</span>
+          </div>
+          <p data-ko="수술 후 6개월 이내 상지기능이 수술 전 대비 90% 이상 회복. 수술 분야 세계 1위 저널 게재." data-en="Over 90% upper limb function recovery within 6 months post-surgery. Published in the world's #1 surgery journal.">수술 후 6개월 이내 상지기능이 수술 전 대비 90% 이상 회복. 수술 분야 세계 1위 저널 게재.</p>
+          <span class="result-period" data-ko="개발 기간 4년" data-en="4 years of development">개발 기간 4년</span>
+        </div>
+
+        <div class="result-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="result-header">
+            <span class="result-tag" data-ko="대장암" data-en="Colorectal Cancer">대장암</span>
+            <span class="result-journal">IJC</span>
+          </div>
+          <h4 data-ko="배변 기능 개선 프로그램" data-en="Bowel Function Recovery Program">배변 기능 개선 프로그램</h4>
+          <div class="result-stat">
+            <span class="result-number">66%</span>
+            <span class="result-desc" data-ko="LARS 위험 감소" data-en="LARS risk reduction">LARS 위험 감소</span>
+          </div>
+          <p data-ko="배변 관련 증상 50% 이상 감소. 미국 수술(5천만원) 대비 운동중재가 더 효과적임을 입증." data-en="Over 50% reduction in bowel symptoms. Proven more effective than surgical alternatives costing ~$40,000 in the US.">배변 관련 증상 50% 이상 감소. 미국 수술(5천만원) 대비 운동중재가 더 효과적임을 입증.</p>
+          <span class="result-period" data-ko="개발 기간 6년" data-en="6 years of development">개발 기간 6년</span>
+        </div>
+
+        <div class="result-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="result-header">
+            <span class="result-tag" data-ko="디지털 치료제" data-en="Digital Therapeutics">디지털 치료제</span>
+            <span class="result-journal">ExerCompass</span>
+          </div>
+          <h4 data-ko="DTx 파일럿 연구" data-en="DTx Pilot Study">DTx 파일럿 연구</h4>
+          <div class="result-stat">
+            <span class="result-number">91.5%</span>
+            <span class="result-desc" data-ko="순응도 달성" data-en="Adherence rate achieved">순응도 달성</span>
+          </div>
+          <p data-ko="6주간 ExerCompass 사용 결과 8개 증상 개선 확인. 사용성 평가 SUS 74.4점 달성." data-en="6-week ExerCompass usage showed improvement in 8 symptoms. System Usability Scale (SUS) score of 74.4.">6주간 ExerCompass 사용 결과 8개 증상 개선 확인. 사용성 평가 SUS 74.4점 달성.</p>
+          <span class="result-period" data-ko="식약처 인허가 추진중" data-en="MFDS approval in progress">식약처 인허가 추진중</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline Section -->
+  <section class="section pipeline" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pipeline</span>
+        <h2 class="section-title" data-ko="다양한 적응증으로&lt;br&gt;&lt;span class='text-gradient'&gt;확장하는 파이프라인&lt;/span&gt;" data-en="Expanding Pipeline&lt;br&gt;&lt;span class='text-gradient'&gt;Across Multiple Indications&lt;/span&gt;">다양한 적응증으로<br><span class="text-gradient">확장하는 파이프라인</span></h2>
+      </div>
+
+      <div class="pipeline-table-wrapper" data-aos="fade-up">
+        <table class="pipeline-table">
+          <thead>
+            <tr>
+              <th data-ko="적응증" data-en="Indication">적응증</th>
+              <th data-ko="대상" data-en="Target">대상</th>
+              <th data-ko="연구" data-en="Research">연구</th>
+              <th data-ko="전임상" data-en="Preclinical">전임상</th>
+              <th data-ko="임상" data-en="Clinical">임상</th>
+              <th data-ko="인허가" data-en="Regulatory">인허가</th>
+              <th data-ko="상용화" data-en="Commercial">상용화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-cancer"></span><span data-ko="유방암 상지기능 개선" data-en="Breast Cancer Upper Limb">유방암 상지기능 개선</span></td>
+              <td data-ko="암 환자" data-en="Cancer">암 환자</td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+            </tr>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-cancer"></span><span data-ko="대장암 배변장애(LARS)" data-en="Colorectal LARS Syndrome">대장암 배변장애(LARS)</span></td>
+              <td data-ko="암 환자" data-en="Cancer">암 환자</td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+            </tr>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-metabolic"></span><span data-ko="당뇨병 / 고혈압 / 비만" data-en="Diabetes / Hypertension / Obesity">당뇨병 / 고혈압 / 비만</span></td>
+              <td data-ko="대사질환" data-en="Metabolic">대사질환</td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+            </tr>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-musculo"></span><span data-ko="근골격 질환 (목/어깨/허리)" data-en="Musculoskeletal (Neck/Shoulder/Back)">근골격 질환 (목/어깨/허리)</span></td>
+              <td data-ko="근골격" data-en="MSK">근골격</td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+            </tr>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-neuro"></span><span data-ko="우울증 / 치매 / 수면장애" data-en="Depression / Dementia / Sleep Disorders">우울증 / 치매 / 수면장애</span></td>
+              <td data-ko="뇌 건강" data-en="Neuro">뇌 건강</td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+              <td><div class="pipeline-bar bar-empty"></div></td>
+            </tr>
+            <tr>
+              <td class="pipeline-name"><span class="pipeline-dot dot-wellness"></span><span data-ko="건강증진 (코어/근력/스트레칭)" data-en="Wellness (Core/Strength/Stretching)">건강증진 (코어/근력/스트레칭)</span></td>
+              <td data-ko="일반인" data-en="General">일반인</td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-complete"></div></td>
+              <td><div class="pipeline-bar bar-na">N/A</div></td>
+              <td><div class="pipeline-bar bar-progress"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pipeline-legend">
+        <span class="legend-item"><span class="legend-dot bar-complete"></span><span data-ko="완료" data-en="Complete">완료</span></span>
+        <span class="legend-item"><span class="legend-dot bar-progress"></span><span data-ko="진행중" data-en="In Progress">진행중</span></span>
+        <span class="legend-item"><span class="legend-dot bar-empty"></span><span data-ko="예정" data-en="Planned">예정</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Cases Section -->
+  <section class="section cases" id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Case Studies</span>
+        <h2 class="section-title" data-ko="검증된 &lt;span class='text-gradient'&gt;협업 성과&lt;/span&gt;" data-en="Proven &lt;span class='text-gradient'&gt;Collaboration Results&lt;/span&gt;">검증된 <span class="text-gradient">협업 성과</span></h2>
+        <p class="section-desc" data-ko="국내외 주요 기관 및 기업과의 성공적인 협업 사례" data-en="Successful collaboration cases with leading institutions and companies">국내외 주요 기관 및 기업과의 성공적인 협업 사례</p>
+      </div>
+
+      <div class="cases-grid">
+        <!-- Case 1: Samsung -->
+        <div class="case-card" data-aos="fade-up">
+          <div class="case-header">
+            <div class="case-logo">Samsung Electronics</div>
+            <span class="case-type" data-ko="공동 연구" data-en="Joint Research">공동 연구</span>
+          </div>
+          <h4 data-ko="Bio-Processor 기반 체성분 분석 및 운동 코칭 알고리즘 개발" data-en="Bio-Processor Based Body Composition Analysis & Exercise Coaching Algorithm">Bio-Processor 기반 체성분 분석 및 운동 코칭 알고리즘 개발</h4>
+          <p data-ko="삼성전자의 Bio-Processor 제품을 활용한 운동선수용 체성분 분석 알고리즘과 건강상태 추정 알고리즘을 공동 개발했습니다." data-en="Co-developed body composition analysis algorithms for athletes and health status estimation algorithms using Samsung's Bio-Processor products.">삼성전자의 Bio-Processor 제품을 활용한 운동선수용 체성분 분석 알고리즘과 건강상태 추정 알고리즘을 공동 개발했습니다.</p>
+          <div class="case-tags">
+            <span>Algorithm Development</span>
+            <span>Wearable</span>
+            <span>Health Monitoring</span>
+          </div>
+        </div>
+
+        <!-- Case 2: NCC -->
+        <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="case-header">
+            <div class="case-logo" data-ko="국립암센터" data-en="National Cancer Center">국립암센터</div>
+            <span class="case-type" data-ko="정부과제" data-en="Gov. Project">정부과제</span>
+          </div>
+          <h4 data-ko="한국형 근거기반 표준화 운동프로그램 개발 및 적용" data-en="Korean Evidence-based Standardized Exercise Program Development">한국형 근거기반 표준화 운동프로그램 개발 및 적용</h4>
+          <p data-ko="10년 이상의 연구를 통해 한국형 암환자 맞춤 운동프로그램을 개발하고 임상 적용을 완료했습니다. 이 연구는 Lifestyle Solution의 핵심 기반이 되었습니다." data-en="Developed and clinically applied a Korean cancer patient exercise program through 10+ years of research. This study became the core foundation of Lifestyle Solution.">10년 이상의 연구를 통해 한국형 암환자 맞춤 운동프로그램을 개발하고 임상 적용을 완료했습니다. 이 연구는 Lifestyle Solution의 핵심 기반이 되었습니다.</p>
+          <div class="case-tags">
+            <span>Cancer Rehab</span>
+            <span>RCT</span>
+            <span>10+ Years</span>
+          </div>
+        </div>
+
+        <!-- Case 3: LG -->
+        <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="case-header">
+            <div class="case-logo">LG Electronics</div>
+            <span class="case-type" data-ko="공동 연구" data-en="Joint Research">공동 연구</span>
+          </div>
+          <h4 data-ko="비침습 체액 센싱 기반 개인 건강 모니터링 기술" data-en="Non-invasive Body Fluid Sensing for Personal Health Monitoring">비침습 체액 센싱 기반 개인 건강 모니터링 기술</h4>
+          <p data-ko="비침습적 체액 센싱 기술을 활용하여 운동 중 땀 속 당 농도를 측정하는 센서 평가 및 개인 건강 상태 모니터링 기술을 공동 개발했습니다." data-en="Co-developed personal health monitoring technology using non-invasive body fluid sensing, including sweat glucose measurement sensor evaluation during exercise.">비침습적 체액 센싱 기술을 활용하여 운동 중 땀 속 당 농도를 측정하는 센서 평가 및 개인 건강 상태 모니터링 기술을 공동 개발했습니다.</p>
+          <div class="case-tags">
+            <span>Biosensor</span>
+            <span>Glucose Monitoring</span>
+            <span>IoT</span>
+          </div>
+        </div>
+
+        <!-- Case 4: Severance -->
+        <div class="case-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="case-header">
+            <div class="case-logo" data-ko="세브란스 병원" data-en="Severance Hospital">세브란스 병원</div>
+            <span class="case-type" data-ko="임상연구" data-en="Clinical Study">임상연구</span>
+          </div>
+          <h4 data-ko="유방암/대장암 수술 후 재활 운동 프로그램 RCT" data-en="Post-surgery Rehabilitation Exercise Program RCTs for Breast & Colorectal Cancer">유방암/대장암 수술 후 재활 운동 프로그램 RCT</h4>
+          <p data-ko="다수의 무작위 대조 임상시험(RCT)을 통해 수술 후 조기 운동의 효과를 검증하고, JAMA Surgery 등 세계적 저널에 성과를 발표했습니다." data-en="Validated the efficacy of early post-operative exercise through multiple RCTs, with results published in world-class journals including JAMA Surgery.">다수의 무작위 대조 임상시험(RCT)을 통해 수술 후 조기 운동의 효과를 검증하고, JAMA Surgery 등 세계적 저널에 성과를 발표했습니다.</p>
+          <div class="case-tags">
+            <span>RCT</span>
+            <span>JAMA Surgery</span>
+            <span>Cancer Rehab</span>
+          </div>
+        </div>
+
+        <!-- Case 5: POSCO -->
+        <div class="case-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="case-header">
+            <div class="case-logo">POSCO</div>
+            <span class="case-type" data-ko="공동 개발" data-en="Co-development">공동 개발</span>
+          </div>
+          <h4 data-ko="비만 모니터링을 위한 Smart Breath Doctor 개발" data-en="Smart Breath Doctor for Obesity Monitoring">비만 모니터링을 위한 Smart Breath Doctor 개발</h4>
+          <p data-ko="호흡 분석 기반의 비만 모니터링 기기 개발에 운동생리학 전문성을 제공하여 정확한 대사율 측정 및 맞춤형 운동 가이드를 구현했습니다." data-en="Provided exercise physiology expertise for breath analysis-based obesity monitoring device, enabling accurate metabolic rate measurement and personalized exercise guidance.">호흡 분석 기반의 비만 모니터링 기기 개발에 운동생리학 전문성을 제공하여 정확한 대사율 측정 및 맞춤형 운동 가이드를 구현했습니다.</p>
+          <div class="case-tags">
+            <span>Breath Analysis</span>
+            <span>Obesity</span>
+            <span>Device</span>
+          </div>
+        </div>
+
+        <!-- Case 6: Dr.Answer 3.0 -->
+        <div class="case-card case-featured" data-aos="fade-up" data-aos-delay="500">
+          <div class="case-header">
+            <div class="case-logo" data-ko="닥터앤서 3.0" data-en="Dr. Answer 3.0">닥터앤서 3.0</div>
+            <span class="case-type" data-ko="DTx 컨소시엄" data-en="DTx Consortium">DTx 컨소시엄</span>
+          </div>
+          <h4 data-ko="ExerCompass: 대장암 LARS 재활 디지털 치료제 개발" data-en="ExerCompass: Digital Therapeutics for Colorectal Cancer LARS Rehabilitation">ExerCompass: 대장암 LARS 재활 디지털 치료제 개발</h4>
+          <p data-ko="18개 기관 컨소시엄에서 Xolution은 운동 중재 모듈을 담당합니다. 식약처 패스트트랙을 통해 2027년 시장 진입을 목표로 API 기반 모듈 아키텍처로 개발 중입니다." data-en="In an 18-institution consortium, Xolution leads the exercise intervention module. Targeting 2027 market entry via MFDS fast-track with API-based modular architecture.">18개 기관 컨소시엄에서 Xolution은 운동 중재 모듈을 담당합니다. 식약처 패스트트랙을 통해 2027년 시장 진입을 목표로 API 기반 모듈 아키텍처로 개발 중입니다.</p>
+          <div class="case-tags">
+            <span>DTx</span>
+            <span>MFDS Fast-track</span>
+            <span>EMR/FHIR</span>
+            <span>2027 Launch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collaboration Stats -->
+      <div class="collab-stats" data-aos="fade-up">
+        <div class="collab-stat">
+          <span class="collab-number">4,822</span>
+          <span class="collab-label" data-ko="임상 및 운동 상담 건수" data-en="Clinical & Exercise Consultations">임상 및 운동 상담 건수</span>
+        </div>
+        <div class="collab-stat">
+          <span class="collab-number">5+</span>
+          <span class="collab-label" data-ko="연간 신규 계약 체결" data-en="New Contracts Per Year">연간 신규 계약 체결</span>
+        </div>
+        <div class="collab-stat">
+          <span class="collab-number">20+</span>
+          <span class="collab-label" data-ko="연간 연구 과제 수행" data-en="Annual Research Projects">연간 연구 과제 수행</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DTx Section -->
+  <section class="section dtx">
+    <div class="container">
+      <div class="dtx-content" data-aos="fade-up">
+        <div class="dtx-info">
+          <span class="section-tag">Digital Therapeutics</span>
+          <h2 class="section-title" data-ko="ExerCompass&lt;br&gt;&lt;span class='text-gradient'&gt;디지털 치료제&lt;/span&gt;" data-en="ExerCompass&lt;br&gt;&lt;span class='text-gradient'&gt;Digital Therapeutics&lt;/span&gt;">ExerCompass<br><span class="text-gradient">디지털 치료제</span></h2>
+          <p data-ko="대장암 수술 후 배변장애(LARS) 개선을 위한 디지털 치료제 ExerCompass는 식약처 패스트트랙을 통해 2027년 시장 진입을 목표로 하고 있습니다." data-en="ExerCompass, a digital therapeutic for improving bowel dysfunction (LARS) after colorectal cancer surgery, targets 2027 market entry via MFDS fast-track approval.">
+            대장암 수술 후 배변장애(LARS) 개선을 위한 디지털 치료제 ExerCompass는
+            식약처 패스트트랙을 통해 2027년 시장 진입을 목표로 하고 있습니다.
+          </p>
+          <ul class="dtx-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span data-ko="한국 DTx 중 가장 풍부한 임상근거 보유" data-en="Strongest clinical evidence among Korean DTx products">한국 DTx 중 가장 풍부한 임상근거 보유</span></li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span data-ko="패스트트랙 적용 시 시장진입 350일 단축" data-en="Fast-track reduces market entry by 350 days">패스트트랙 적용 시 시장진입 350일 단축</span></li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span data-ko="FHIR 표준 EMR 연동 지원" data-en="FHIR-standard EMR integration">FHIR 표준 EMR 연동 지원</span></li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span data-ko="닥터앤서 3.0 컨소시엄 참여" data-en="Dr. Answer 3.0 consortium member">닥터앤서 3.0 컨소시엄 참여</span></li>
+          </ul>
+        </div>
+        <div class="dtx-timeline">
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026 H1</span>
+              <h4 data-ko="설계 단계" data-en="Design Phase">설계 단계</h4>
+              <p data-ko="FHIR 리소스 매핑, 식약처 사전상담" data-en="FHIR resource mapping, MFDS pre-consultation">FHIR 리소스 매핑, 식약처 사전상담</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026 H2</span>
+              <h4 data-ko="개발 단계" data-en="Development Phase">개발 단계</h4>
+              <p data-ko="서버 구축, 앱 개발, K-GMP 준비" data-en="Server build, app development, K-GMP preparation">서버 구축, 앱 개발, K-GMP 준비</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2027</span>
+              <h4 data-ko="검증 & 시장진입" data-en="Validation & Market Entry">검증 & 시장진입</h4>
+              <p data-ko="확증 임상, 허가 신청, 패스트트랙 진입" data-en="Confirmatory RCT, regulatory filing, fast-track entry">확증 임상, 허가 신청, 패스트트랙 진입</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Leadership</span>
+        <h2 class="section-title" data-ko="국내 최고 수준의&lt;br&gt;&lt;span class='text-gradient'&gt;전문가 팀&lt;/span&gt;" data-en="World-class&lt;br&gt;&lt;span class='text-gradient'&gt;Expert Team&lt;/span&gt;">국내 최고 수준의<br><span class="text-gradient">전문가 팀</span></h2>
+      </div>
+
+      <div class="team-ceo" data-aos="fade-up">
+        <div class="ceo-photo">
+          <div class="ceo-photo-placeholder">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="2"/><path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <!-- CEO Website Link -->
+          <a href="https://drjustinjeon.com" target="_blank" rel="noopener noreferrer" class="ceo-website-link">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.497-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"/></svg>
+            drjustinjeon.com
+          </a>
+        </div>
+        <div class="ceo-info">
+          <div class="ceo-name-area">
+            <h3><span data-ko="전용관" data-en="Justin Y. Jeon">전용관</span> <span class="ceo-eng">Justin Y. Jeon, PhD</span></h3>
+            <span class="ceo-title" data-ko="대표이사 / CEO" data-en="Founder & CEO">대표이사 / CEO</span>
+            <a href="https://drjustinjeon.com" target="_blank" rel="noopener noreferrer" class="ceo-link-inline">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg>
+              drjustinjeon.com
+            </a>
+          </div>
+          <div class="ceo-credentials">
+            <div class="credential-group">
+              <h4 data-ko="학력" data-en="Education">학력</h4>
+              <ul>
+                <li data-ko="연세대학교 체육교육학과 학사" data-en="B.A., Physical Education, Yonsei University">연세대학교 체육교육학과 학사</li>
+                <li data-ko="캐나다 알버타 대학교 석박사 (운동의학-재활)" data-en="M.Sc./Ph.D., Exercise Medicine-Rehabilitation, University of Alberta, Canada">캐나다 알버타 대학교 석박사 (운동의학-재활)</li>
+                <li data-ko="하버드 대학교 의과대학 박사후과정" data-en="Postdoctoral Fellow, Harvard Medical School">하버드 대학교 의과대학 박사후과정</li>
+              </ul>
+            </div>
+            <div class="credential-group">
+              <h4 data-ko="현직" data-en="Current Positions">현직</h4>
+              <ul>
+                <li data-ko="연세대학교 스포츠응용산업학과 교수" data-en="Professor, Sport Industry Studies, Yonsei University">연세대학교 스포츠응용산업학과 교수</li>
+                <li data-ko="신촌 세브란스 암예방센터 겸직 교수" data-en="Professor, Cancer Prevention Center, Severance Hospital">신촌 세브란스 암예방센터 겸직 교수</li>
+                <li data-ko="연세 운동의학 및 살루토제네시스 센터장(ICONS)" data-en="Director, ICONS Center for Exercise Medicine & Salutogenesis">연세 운동의학 및 살루토제네시스 센터장(ICONS)</li>
+                <li data-ko="운동생리학회 부회장" data-en="Vice President, Korean Society of Exercise Physiology">운동생리학회 부회장</li>
+              </ul>
+            </div>
+            <div class="credential-group">
+              <h4 data-ko="주요 수상" data-en="Awards">주요 수상</h4>
+              <ul>
+                <li data-ko="연세대학교 언더우드 특훈 (Distinguished Professor) 2021" data-en="Yonsei Underwood Distinguished Professor, 2021">연세대학교 언더우드 특훈 (Distinguished Professor) 2021</li>
+                <li data-ko="연세학술상 2021 (연구 부분 최고 영예)" data-en="Yonsei Academic Award 2021 (Highest research honor)">연세학술상 2021 (연구 부분 최고 영예)</li>
+                <li data-ko="대통령 표창 (평창동계 올림픽 유치 공로)" data-en="Presidential Citation (PyeongChang Winter Olympics bid)">대통령 표창 (평창동계 올림픽 유치 공로)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ceo-research">
+            <span class="research-tag">Exercise for Sick Care</span>
+            <span class="research-tag">Exercise for Health Care</span>
+            <span class="research-tag">Digital Therapeutics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="advisory-board" data-aos="fade-up">
+        <h3 class="advisory-title">Technical Advisory</h3>
+        <div class="advisory-grid">
+          <div class="advisor-card">
+            <h4 data-ko="이영희 교수" data-en="Prof. Young-Hee Lee">이영희 교수</h4>
+            <p data-ko="전) 원주 세브란스 병원장&lt;br&gt;현) KATA 위원장&lt;br&gt;현) CMO SRC Rehabilitation" data-en="Fmr) Director, Wonju Severance Hospital&lt;br&gt;Cur) Chairman, KATA&lt;br&gt;Cur) CMO SRC Rehabilitation">전) 원주 세브란스 병원장<br>현) KATA 위원장<br>현) CMO SRC Rehabilitation</p>
+          </div>
+          <div class="advisor-card">
+            <h4 data-ko="김경철 원장" data-en="Dr. Kyung-Chul Kim">김경철 원장</h4>
+            <p data-ko="연세대학교 의과대학 졸&lt;br&gt;현) 웰케어 클리닉 원장" data-en="Yonsei University College of Medicine&lt;br&gt;Cur) Director, WellCare Clinic">연세대학교 의과대학 졸<br>현) 웰케어 클리닉 원장</p>
+          </div>
+          <div class="advisor-card">
+            <h4 data-ko="이지원 교수" data-en="Prof. Ji-Won Lee">이지원 교수</h4>
+            <p data-ko="현) 신촌세브란스 가정의학과장" data-en="Cur) Chair, Dept. of Family Medicine, Shinchon Severance Hospital">현) 신촌세브란스 가정의학과장</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Partners</span>
+        <h2 class="section-title" data-ko="국내 주요 기관 및 기업&lt;br&gt;&lt;span class='text-gradient'&gt;다양한 레퍼런스&lt;/span&gt; 보유" data-en="Trusted by Leading&lt;br&gt;&lt;span class='text-gradient'&gt;Institutions & Companies&lt;/span&gt;">국내 주요 기관 및 기업<br><span class="text-gradient">다양한 레퍼런스</span> 보유</h2>
+      </div>
+
+      <div class="partners-grid" data-aos="fade-up">
+        <div class="partner-category">
+          <h4 data-ko="민간 기업" data-en="Private Sector">민간 기업</h4>
+          <div class="partner-logos">
+            <div class="partner-logo-item">Samsung Electronics</div>
+            <div class="partner-logo-item">LG Electronics</div>
+            <div class="partner-logo-item">POSCO</div>
+            <div class="partner-logo-item">Lotte Healthcare</div>
+            <div class="partner-logo-item">Selvas AI</div>
+            <div class="partner-logo-item">HUE&JOY</div>
+            <div class="partner-logo-item">HAI Corp.</div>
+            <div class="partner-logo-item">OnTact Health</div>
+          </div>
+        </div>
+        <div class="partner-category">
+          <h4 data-ko="대학 및 병원" data-en="Universities & Hospitals">대학 및 병원</h4>
+          <div class="partner-logos">
+            <div class="partner-logo-item highlight" data-ko="세브란스 병원" data-en="Severance Hospital">세브란스 병원</div>
+            <div class="partner-logo-item highlight" data-ko="연세대학교" data-en="Yonsei University">연세대학교</div>
+          </div>
+        </div>
+        <div class="partner-category">
+          <h4 data-ko="공공기관" data-en="Public Institutions">공공기관</h4>
+          <div class="partner-logos">
+            <div class="partner-logo-item" data-ko="국립암센터" data-en="National Cancer Center">국립암센터</div>
+            <div class="partner-logo-item" data-ko="문화체육관광부" data-en="Ministry of Culture, Sports & Tourism">문화체육관광부</div>
+            <div class="partner-logo-item" data-ko="한화생명" data-en="Hanwha Life Insurance">한화생명</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-model" data-aos="fade-up">
+        <h3 data-ko="수익 모델" data-en="Revenue Model">수익 모델</h3>
+        <div class="biz-model-grid">
+          <div class="biz-card">
+            <div class="biz-term">Short-term</div>
+            <h4>B2B Service</h4>
+            <p data-ko="연구기관, 재활기관, 헬스케어 기업에 운동 및 라이프스타일 관련 컨설팅, 자문, 라이선스 제공" data-en="Consulting, advisory, and licensing for research institutions, rehab centers, and healthcare companies">연구기관, 재활기관, 헬스케어 기업에 운동 및 라이프스타일 관련 컨설팅, 자문, 라이선스 제공</p>
+          </div>
+          <div class="biz-card biz-center">
+            <div class="biz-term">Core</div>
+            <h4>R&D</h4>
+            <p data-ko="근거기반 운동프로그램 플랫폼을 통한 파이프라인 지속 확장 및 디지털 치료제 개발" data-en="Continuous pipeline expansion and digital therapeutics development through evidence-based exercise platform">근거기반 운동프로그램 플랫폼을 통한 파이프라인 지속 확장 및 디지털 치료제 개발</p>
+          </div>
+          <div class="biz-card">
+            <div class="biz-term">Long-term</div>
+            <h4>B2B2C Service</h4>
+            <p data-ko="디지털 치료제 식약처 인증 후 의료기관 및 보험회사 연계를 통한 건강관리 플랫폼 운영" data-en="Health management platform through medical institution and insurance company partnerships after DTx regulatory approval">디지털 치료제 식약처 인증 후 의료기관 및 보험회사 연계를 통한 건강관리 플랫폼 운영</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-right">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title" data-ko="함께 만들어가는&lt;br&gt;&lt;span class='text-gradient'&gt;건강한 미래&lt;/span&gt;" data-en="Building a&lt;br&gt;&lt;span class='text-gradient'&gt;Healthier Future Together&lt;/span&gt;">함께 만들어가는<br><span class="text-gradient">건강한 미래</span></h2>
+          <p data-ko="Xolution과의 협력, 투자, 사업 문의를 환영합니다." data-en="We welcome inquiries about partnerships, investments, and business opportunities.">Xolution과의 협력, 투자, 사업 문의를 환영합니다.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h4 data-ko="주소" data-en="Address">주소</h4>
+                <p data-ko="서울 서대문구 이화여대 3길" data-en="Ewha Womans Univ. 3-gil, Seodaemun-gu, Seoul, Korea">서울 서대문구 이화여대 3길</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              <div>
+                <h4 data-ko="이메일" data-en="Email">이메일</h4>
+                <p>info@xolution.co.kr</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <div>
+                <h4 data-ko="설립일" data-en="Founded">설립일</h4>
+                <p data-ko="2023년 9월 12일" data-en="September 12, 2023">2023년 9월 12일</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-ko="이름 / 기관명" data-en="Name / Organization">이름 / 기관명</label>
+              <input type="text" id="name" name="name" required data-placeholder-ko="홍길동 / 기관명" data-placeholder-en="Your name / Organization" placeholder="홍길동 / 기관명">
+            </div>
+            <div class="form-group">
+              <label for="email" data-ko="이메일" data-en="Email">이메일</label>
+              <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+              <label for="type" data-ko="문의 유형" data-en="Inquiry Type">문의 유형</label>
+              <select id="type" name="type">
+                <option value="" data-ko="선택해주세요" data-en="Please select">선택해주세요</option>
+                <option value="partnership" data-ko="사업 협력" data-en="Partnership">사업 협력</option>
+                <option value="investment" data-ko="투자 문의" data-en="Investment">투자 문의</option>
+                <option value="consulting" data-ko="컨설팅 / 자문" data-en="Consulting">컨설팅 / 자문</option>
+                <option value="research" data-ko="공동 연구" data-en="Research">공동 연구</option>
+                <option value="other" data-ko="기타" data-en="Other">기타</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-ko="문의 내용" data-en="Message">문의 내용</label>
+              <textarea id="message" name="message" rows="5" required data-placeholder-ko="문의 내용을 입력해주세요" data-placeholder-en="Please enter your message" placeholder="문의 내용을 입력해주세요"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-ko="문의 보내기" data-en="Send Inquiry">문의 보내기</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 4L4 12v16l16 8 16-8V12L20 4z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 4v32M4 12l16 8 16-8M4 28l16-8 16 8" stroke="currentColor" stroke-width="1.5" opacity="0.6"/></svg>
+            <span class="logo-text">xolution</span>
+          </div>
+          <p class="footer-desc" data-ko="살루토제닉 라이프스타일을 통해 더 건강하고 행복한 삶을 만들어 갑니다" data-en="Building a nurturing society for healthier and happier lives through salutogenic lifestyles">살루토제닉 라이프스타일을 통해 더 건강하고 행복한 삶을 만들어 갑니다</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-ko="회사" data-en="Company">회사</h4>
+            <a href="#about" data-ko="회사 소개" data-en="About">회사 소개</a>
+            <a href="#team" data-ko="팀 소개" data-en="Team">팀 소개</a>
+            <a href="#partners" data-ko="파트너" data-en="Partners">파트너</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-ko="기술" data-en="Technology">기술</h4>
+            <a href="#technology" data-ko="핵심 기술" data-en="Core Tech">핵심 기술</a>
+            <a href="#pipeline" data-ko="파이프라인" data-en="Pipeline">파이프라인</a>
+            <a href="#cases" data-ko="협업 사례" data-en="Case Studies">협업 사례</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-ko="문의" data-en="Contact">문의</h4>
+            <a href="#contact" data-ko="사업 문의" data-en="Business">사업 문의</a>
+            <a href="mailto:info@xolution.co.kr">info@xolution.co.kr</a>
+            <a href="https://drjustinjeon.com" target="_blank" rel="noopener noreferrer">drjustinjeon.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Xolution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
