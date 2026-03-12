@@ -173,19 +173,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===== Contact Form =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+  contactForm.addEventListener('submit', function() {
     const btn = this.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-    btn.textContent = currentLang === 'ko' ? '문의가 접수되었습니다!' : 'Inquiry submitted!';
-    btn.style.background = '#10b981';
+    btn.textContent = currentLang === 'ko' ? '전송 중...' : 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.style.background = '';
-      btn.disabled = false;
-      this.reset();
-    }, 3000);
   });
 }
 
