@@ -65,7 +65,7 @@
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-number" data-target="190">0</span><span class="stat-suffix">+</span>
+          <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
           <span class="stat-label" data-ko="SCI(E)급 논문" data-en="SCI(E) Publications">SCI(E)급 논문</span>
         </div>
         <div class="stat-divider"></div>
@@ -189,15 +189,26 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Research</span>
-        <h2 class="section-title" data-ko="과학적 근거<br><span class='text-gradient'>Peer-Reviewed Publications</span>" data-en="Scientific Foundation<br><span class='text-gradient'>Peer-Reviewed Publications</span>">과학적 근거<br><span class="text-gradient">Peer-Reviewed Publications</span></h2>
-        <p class="section-desc" data-ko="Health OS Xolution은 Nature Medicine, Scientific Reports 등<br>세계 최고 수준 저널에 게재된 연구에 기반합니다." data-en="Health OS Xolution is built on research published in<br>Nature Medicine, Scientific Reports, and other top-tier journals.">
-          Health OS Xolution은 Nature Medicine, Scientific Reports 등<br>
-          세계 최고 수준 저널에 게재된 연구에 기반합니다.
+        <h2 class="section-title" data-ko="건강의 모든 영역을<br><span class='text-gradient'>과학으로 섭렵하다</span>" data-en="Mastering the<br><span class='text-gradient'>Full Spectrum of Health</span>">건강의 모든 영역을<br><span class="text-gradient">과학으로 섭렵하다</span></h2>
+        <p class="section-desc" data-ko="운동종양학부터 대사질환, 심혈관, 웨어러블 기술까지 —<br>20년간 축적된 근거 기반 연구가 Xolution의 핵심 엔진입니다." data-en="From exercise oncology to metabolic disease, cardiovascular health to wearable technology —<br>two decades of evidence-based research powering Xolution.">
+          운동종양학부터 대사질환, 심혈관, 웨어러블 기술까지 —<br>
+          20년간 축적된 근거 기반 연구가 Xolution의 핵심 엔진입니다.
         </p>
       </div>
 
-      <div class="research-grid">
-        <div class="research-card" data-aos="fade-up">
+      <!-- Research Universe Visualization -->
+      <div class="research-universe-wrap" data-aos="fade-up">
+        <div class="research-universe-container">
+          <svg id="researchUniverseSvg" class="research-universe-svg"></svg>
+        </div>
+      </div>
+
+      <!-- Domain Cards Grid -->
+      <div class="research-domain-grid" id="researchDomainGrid" data-aos="fade-up"></div>
+
+      <!-- Key Publications -->
+      <div class="research-grid" data-aos="fade-up" style="margin-top:48px">
+        <div class="research-card">
           <div class="research-category" style="color: var(--accent);" data-ko="웨어러블 센서 기술" data-en="Wearable Sensor Technology">웨어러블 센서 기술</div>
           <ul class="research-list">
             <li>Full-Textile Electrostimulation<br><span>Advanced Energy Materials, 2026</span></li>
@@ -205,8 +216,7 @@
             <li>Breath Acetone Real-time Detection<br><span>Sensors & Actuators B: Chemical</span></li>
           </ul>
         </div>
-
-        <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="research-card">
           <div class="research-category" style="color: var(--success);" data-ko="체력 평가·건강 추정" data-en="Fitness Assessment & Health Estimation">체력 평가·건강 추정</div>
           <ul class="research-list">
             <li>Wearable PAEE & Mortality (n=96,476)<br><span>Nature Medicine, 2020</span></li>
@@ -214,8 +224,7 @@
             <li>Submaximal Walk Test → VO₂max<br><span>Sensors, 2021</span></li>
           </ul>
         </div>
-
-        <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="research-card">
           <div class="research-category" style="color: #f59e0b;" data-ko="운동의학·임상 중재" data-en="Exercise Medicine & Clinical Intervention">운동의학·임상 중재</div>
           <ul class="research-list">
             <li>ADCR + Exercise RCT<br><span>BMC Public Health, 2018</span></li>
@@ -223,8 +232,7 @@
             <li>PA During Chemotherapy<br><span>Supportive Care in Cancer, 2019</span></li>
           </ul>
         </div>
-
-        <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="research-card">
           <div class="research-category" style="color: #ec4899;" data-ko="AI & 빅데이터" data-en="AI & Big Data">AI & 빅데이터</div>
           <ul class="research-list">
             <li>ML 기반 운동 중 혈당 변화 예측<br><span data-ko="운동생리학회지, 2023 (LG전자 공동)" data-en="Korean J Exercise Physiology, 2023 (w/ LG)">운동생리학회지, 2023 (LG전자 공동)</span></li>
@@ -235,8 +243,8 @@
       </div>
 
       <div class="research-summary" data-aos="fade-up">
-        <p data-ko="Prof. Justin Jeon 연구팀 — 190+ SCI(E) 논문 | Nature Medicine, Scientific Reports, Advanced Energy Materials 등" data-en="Prof. Justin Jeon's Lab — 190+ SCI(E) papers | Nature Medicine, Scientific Reports, Advanced Energy Materials & more">
-          Prof. Justin Jeon 연구팀 — 190+ SCI(E) 논문 | Nature Medicine, Scientific Reports, Advanced Energy Materials 등
+        <p data-ko="Prof. Justin Jeon 연구팀 — 300+ 학술 논문 | 15개 건강 분야 | Nature Medicine, JAMA Surgery, Scientific Reports 등" data-en="Prof. Justin Jeon's Lab — 300+ Publications | 15 Health Domains | Nature Medicine, JAMA Surgery, Scientific Reports & more">
+          Prof. Justin Jeon 연구팀 — 300+ 학술 논문 | 15개 건강 분야 | Nature Medicine, JAMA Surgery, Scientific Reports 등
         </p>
       </div>
     </div>
@@ -874,6 +882,249 @@
     </div>
   </footer>
 
+  <!-- Research Universe Tooltip -->
+  <div class="ru-tooltip" id="ruTooltip"></div>
+
   <script src="script.js"></script>
+  <script>
+  // Research Universe Visualization
+  (function() {
+    const domains = [
+      { name:"Exercise Oncology", ko:"운동종양학", count:111, icon:"🎗️", color:"#ef4444" },
+      { name:"Diabetes & Metabolism", ko:"당뇨/대사질환", count:57, icon:"🩸", color:"#f97316" },
+      { name:"Obesity & Body Composition", ko:"비만/체성분", count:35, icon:"⚖️", color:"#eab308" },
+      { name:"Physical Activity Epidemiology", ko:"신체활동 역학", count:34, icon:"📊", color:"#22c55e" },
+      { name:"Cardiovascular Health", ko:"심혈관 건강", count:12, icon:"❤️", color:"#ec4899" },
+      { name:"Mental Health", ko:"정신건강", count:6, icon:"🧠", color:"#a855f7" },
+      { name:"Exercise Physiology", ko:"운동과학", count:6, icon:"💪", color:"#3b82f6" },
+      { name:"Rehabilitation", ko:"재활/임상운동", count:5, icon:"🏥", color:"#14b8a6" },
+      { name:"Wearable Technology", ko:"웨어러블/센서", count:4, icon:"⌚", color:"#6366f1" },
+      { name:"Pediatric & Youth", ko:"아동청소년", count:3, icon:"👶", color:"#06b6d4" },
+      { name:"Elderly & Aging", ko:"노인건강", count:3, icon:"🧓", color:"#78716c" },
+      { name:"Adapted Physical Activity", ko:"특수체육", count:3, icon:"♿", color:"#64748b" },
+      { name:"Biomarker & Biochemistry", ko:"바이오마커", count:2, icon:"🔬", color:"#8b5cf6" },
+      { name:"Nutrition & Diet", ko:"영양/식이", count:1, icon:"🥗", color:"#16a34a" },
+    ];
+    const total = domains.reduce((s,d)=>s+d.count,0);
+    const maxC = Math.max(...domains.map(d=>d.count));
+    const ns = 'http://www.w3.org/2000/svg';
+    const tooltip = document.getElementById('ruTooltip');
+
+    // Build domain cards
+    const grid = document.getElementById('researchDomainGrid');
+    if(grid) {
+      domains.forEach(d => {
+        const c = document.createElement('div');
+        c.className = 'rd-card';
+        const pct = (d.count/maxC*100).toFixed(0);
+        c.innerHTML = '<div class="rd-icon">'+d.icon+'</div>'
+          +'<div class="rd-name">'+d.ko+'<span class="rd-name-en">'+d.name+'</span></div>'
+          +'<div class="rd-count" style="color:'+d.color+'">'+d.count+'</div>'
+          +'<div class="rd-unit">publications</div>'
+          +'<div class="rd-bar" style="background:'+d.color+';width:'+pct+'%"></div>';
+        grid.appendChild(c);
+      });
+    }
+
+    // Build SVG
+    function buildUniverse() {
+      const svg = document.getElementById('researchUniverseSvg');
+      if(!svg) return;
+      const wrap = svg.parentElement;
+      const W = wrap.offsetWidth;
+      const H = W;
+      svg.setAttribute('viewBox','0 0 '+W+' '+H);
+      svg.innerHTML = '';
+      const cx=W/2, cy=H/2;
+
+      // Orbits
+      [0.22,0.35,0.46].forEach(r => {
+        const c = document.createElementNS(ns,'circle');
+        c.setAttribute('cx',cx); c.setAttribute('cy',cy);
+        c.setAttribute('r',r*W); c.setAttribute('fill','none');
+        c.setAttribute('stroke','rgba(0,0,0,0.05)');
+        c.setAttribute('stroke-width','1');
+        c.setAttribute('stroke-dasharray','4,8');
+        svg.appendChild(c);
+      });
+
+      // Center pulse
+      const pulse = document.createElementNS(ns,'circle');
+      pulse.setAttribute('cx',cx); pulse.setAttribute('cy',cy);
+      pulse.setAttribute('r',W*0.09);
+      pulse.setAttribute('fill','#3b82f6'); pulse.setAttribute('opacity','0.1');
+      pulse.style.animation='ru-pulse 3s ease-in-out infinite';
+      pulse.style.transformOrigin=cx+'px '+cy+'px';
+      svg.appendChild(pulse);
+
+      // Center circle
+      const cBg = document.createElementNS(ns,'circle');
+      cBg.setAttribute('cx',cx); cBg.setAttribute('cy',cy);
+      cBg.setAttribute('r',W*0.065);
+      cBg.setAttribute('fill','white');
+      cBg.setAttribute('stroke','rgba(0,0,0,0.06)');
+      cBg.setAttribute('stroke-width','2');
+      svg.appendChild(cBg);
+
+      // Center text
+      const t1 = document.createElementNS(ns,'text');
+      t1.setAttribute('x',cx); t1.setAttribute('y',cy-W*0.008);
+      t1.setAttribute('text-anchor','middle'); t1.setAttribute('font-size',W*0.026);
+      t1.setAttribute('font-weight','800'); t1.setAttribute('fill','#3b82f6');
+      t1.textContent=total;
+      svg.appendChild(t1);
+      const t2 = document.createElementNS(ns,'text');
+      t2.setAttribute('x',cx); t2.setAttribute('y',cy+W*0.016);
+      t2.setAttribute('text-anchor','middle'); t2.setAttribute('font-size',W*0.01);
+      t2.setAttribute('font-weight','600'); t2.setAttribute('fill','#94a3b8');
+      t2.setAttribute('letter-spacing','1.5');
+      t2.textContent='PAPERS';
+      svg.appendChild(t2);
+
+      // Place bubbles
+      const sorted = [...domains].sort((a,b)=>b.count-a.count);
+      const ringAssign = [];
+      sorted.slice(0,4).forEach((d,i) => ringAssign.push({...d,ring:0,idx:i,total:4}));
+      sorted.slice(4,9).forEach((d,i) => ringAssign.push({...d,ring:1,idx:i,total:5}));
+      sorted.slice(9).forEach((d,i) => ringAssign.push({...d,ring:2,idx:i,total:sorted.length-9}));
+
+      const ringR = [W*0.22, W*0.34, W*0.44];
+      const minB=W*0.02, maxB=W*0.06;
+
+      ringAssign.forEach((d,gi) => {
+        const angle = (d.idx/d.total)*Math.PI*2 - Math.PI/2;
+        const rr = ringR[d.ring];
+        const bx = cx+Math.cos(angle)*rr;
+        const by = cy+Math.sin(angle)*rr;
+        const br = minB + (d.count/maxC)*(maxB-minB);
+
+        // Line
+        const line = document.createElementNS(ns,'line');
+        line.setAttribute('x1',cx); line.setAttribute('y1',cy);
+        line.setAttribute('x2',bx); line.setAttribute('y2',by);
+        line.setAttribute('stroke',d.color);
+        line.setAttribute('stroke-width','1'); line.setAttribute('opacity','0.1');
+        svg.appendChild(line);
+
+        const g = document.createElementNS(ns,'g');
+        g.style.cursor='pointer';
+
+        // Glow
+        const glow = document.createElementNS(ns,'circle');
+        glow.setAttribute('cx',bx); glow.setAttribute('cy',by);
+        glow.setAttribute('r',br+3);
+        glow.setAttribute('fill',d.color); glow.setAttribute('opacity','0');
+        glow.style.transition='opacity 0.3s';
+        g.appendChild(glow);
+
+        // Bubble
+        const bubble = document.createElementNS(ns,'circle');
+        bubble.setAttribute('cx',bx); bubble.setAttribute('cy',by);
+        bubble.setAttribute('r',br);
+        bubble.setAttribute('fill',d.color); bubble.setAttribute('opacity','0.85');
+        bubble.style.transition='opacity 0.3s';
+        g.appendChild(bubble);
+
+        // Icon
+        const icon = document.createElementNS(ns,'text');
+        icon.setAttribute('x',bx); icon.setAttribute('y',by-br*0.1);
+        icon.setAttribute('text-anchor','middle');
+        icon.setAttribute('dominant-baseline','central');
+        icon.setAttribute('font-size',Math.max(br*0.7,12));
+        icon.textContent=d.icon;
+        g.appendChild(icon);
+
+        // Count
+        if(br>W*0.028) {
+          const ct = document.createElementNS(ns,'text');
+          ct.setAttribute('x',bx); ct.setAttribute('y',by+br*0.55);
+          ct.setAttribute('text-anchor','middle');
+          ct.setAttribute('font-size',Math.max(br*0.35,9));
+          ct.setAttribute('font-weight','700'); ct.setAttribute('fill','white');
+          ct.textContent=d.count;
+          g.appendChild(ct);
+        }
+
+        // Label
+        const lr = rr+br+12;
+        const lx = cx+Math.cos(angle)*lr;
+        const ly = cy+Math.sin(angle)*lr;
+        const label = document.createElementNS(ns,'text');
+        label.setAttribute('x',lx); label.setAttribute('y',ly);
+        label.setAttribute('text-anchor',Math.cos(angle)>0.1?'start':Math.cos(angle)<-0.1?'end':'middle');
+        label.setAttribute('dominant-baseline','central');
+        label.setAttribute('font-size',Math.max(W*0.011,9));
+        label.setAttribute('font-weight','600');
+        label.setAttribute('fill','#334155');
+        label.textContent=d.ko;
+        label.style.opacity='0.65';
+        label.style.transition='opacity 0.3s';
+        g.appendChild(label);
+
+        // Hover
+        g.addEventListener('mouseenter',function(e){
+          bubble.setAttribute('opacity','1');
+          glow.setAttribute('opacity','0.2');
+          label.style.opacity='1';
+          line.setAttribute('opacity','0.3');
+          line.setAttribute('stroke-width','2');
+          const pct=((d.count/total)*100).toFixed(1);
+          tooltip.innerHTML='<div class="tt-cat" style="color:'+d.color+'">'+d.name+'</div>'
+            +'<div class="tt-name">'+d.ko+'</div>'
+            +'<div class="tt-num" style="color:'+d.color+'">'+d.count+'</div>'
+            +'<div class="tt-sub">publications ('+pct+'%)</div>'
+            +'<div class="tt-bar-bg"><div class="tt-bar-fill" style="background:'+d.color+';width:'+pct+'%"></div></div>';
+          tooltip.classList.add('active');
+        });
+        g.addEventListener('mousemove',function(e){
+          let l=e.clientX+14, t=e.clientY-tooltip.offsetHeight/2;
+          if(l+tooltip.offsetWidth>window.innerWidth-16) l=e.clientX-tooltip.offsetWidth-14;
+          if(t<8) t=8;
+          tooltip.style.left=l+'px'; tooltip.style.top=t+'px';
+        });
+        g.addEventListener('mouseleave',function(){
+          bubble.setAttribute('opacity','0.85');
+          glow.setAttribute('opacity','0');
+          label.style.opacity='0.65';
+          line.setAttribute('opacity','0.1');
+          line.setAttribute('stroke-width','1');
+          tooltip.classList.remove('active');
+        });
+
+        svg.appendChild(g);
+
+        // Entrance animation
+        g.style.opacity='0';
+        g.style.transform='translate('+(cx-bx)+'px,'+(cy-by)+'px) scale(0)';
+        setTimeout(function(){
+          g.style.transition='opacity 0.5s ease, transform 0.5s cubic-bezier(0.34,1.56,0.64,1)';
+          g.style.opacity='1';
+          g.style.transform='translate(0,0) scale(1)';
+        }, 200+gi*60);
+      });
+    }
+
+    // Init: build immediately, also rebuild on resize
+    var built = false;
+    function initUniverse() {
+      if(!built) { buildUniverse(); built = true; }
+    }
+    // Try IntersectionObserver, but also fire on load as fallback
+    var target = document.getElementById('researchUniverseSvg');
+    if(target) {
+      if('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){ initUniverse(); observer.disconnect(); }
+          });
+        }, {threshold:0.1});
+        observer.observe(target);
+      }
+      // Fallback: build after short delay (handles #hash navigation)
+      setTimeout(initUniverse, 500);
+    }
+    window.addEventListener('resize', function(){ if(built) buildUniverse(); });
+  })();
+  </script>
 </body>
 </html>
